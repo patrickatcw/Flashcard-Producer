@@ -21,7 +21,7 @@ console.log(firstPresident.front);
 "George Washington"
 console.log(firstPresident.back); */
 
-function basicCard(front, back) {
+var BasicCard = function (front, back) {
     this.front = front;
     this.back = back;
     this.PrintStats = function() {
@@ -29,8 +29,6 @@ function basicCard(front, back) {
     }
 };
 
-var firstPresident = new basicCard("Who was the first president of the United States?", "George Washington");
-     // console.log(firstPresident.front, firstPresident.back);
 
-firstPresident.PrintStats();
+module.exports = BasicCard;
 

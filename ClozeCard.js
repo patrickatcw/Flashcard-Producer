@@ -30,7 +30,7 @@ console.log(firstPresidentCloze.fullText): "
 Should throw or log an error because "oops" doesn't appear in "This doesn't work"
 var brokenCloze = new ClozeCard("This doesn't work", "oops");*/
 
-function clozeCard(fullText, cloze) {
+var ClozeCard = function (fullText, cloze) {
 	this.fullText = fullText;
     this.cloze = cloze;
     this.partial = this.fullText.replace(this.cloze,"..."),
@@ -42,11 +42,8 @@ function clozeCard(fullText, cloze) {
     }
 };
 
-var georgeWashington = new clozeCard("George Washington was the first president of the United States.", "George Washington")
-     //console.log(georgeWashington.partial);
-     //console.log(firstPresidentCloze.fullText);
 
-georgeWashington.PrintStats();
+module.exports = ClozeCard;
 
 
 
