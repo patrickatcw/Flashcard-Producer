@@ -31,15 +31,11 @@ Should throw or log an error because "oops" doesn't appear in "This doesn't work
 var brokenCloze = new ClozeCard("This doesn't work", "oops");*/
 
 var ClozeCard = function (fullText, cloze) {
-	this.fullText = fullText;
+	this.fullText = text;
     this.cloze = cloze;
     this.partial = this.fullText.replace(this.cloze,"..."),
-    this.invalid = function() {
-    	this.fullText.includes(this.cloze) ? console.log("This is an invalid flashcard") : console.log(this.fullText);
-    }
-    this.PrintStats = function() {
-    	console.log(this.partial);
-    }
+    
+   
 };
 
 

@@ -24,11 +24,8 @@ console.log(firstPresident.back); */
 var BasicCard = function (front, back) {
     this.front = front;
     this.back = back;
-    this.PrintStats = function() {
-    	console.log(this.front, this.back);
-    }
+    
 };
-
 
 module.exports = BasicCard;
 
